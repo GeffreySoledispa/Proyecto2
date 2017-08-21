@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://webservices.services/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webservices.services/">
+
+<xs:element name="BuscarDocente" type="tns:BuscarDocente" />
+
+<xs:element name="BuscarDocenteResponse" type="tns:BuscarDocenteResponse" />
+
+<xs:element name="BuscarEstudiante" type="tns:BuscarEstudiante" />
+
+<xs:element name="BuscarEstudianteResponse" type="tns:BuscarEstudianteResponse" />
+
+<xs:element name="BuscarInstitucion" type="tns:BuscarInstitucion" />
+
+<xs:element name="BuscarInstitucionResponse" type="tns:BuscarInstitucionResponse" />
+
+<xs:element name="ConsultarDocentes" type="tns:ConsultarDocentes" />
+
+<xs:element name="ConsultarDocentesResponse" type="tns:ConsultarDocentesResponse" />
+
+<xs:element name="ConsultarEnInstitucion" type="tns:ConsultarEnInstitucion" />
+
+<xs:element name="ConsultarEnInstitucionResponse" type="tns:ConsultarEnInstitucionResponse" />
+
+<xs:element name="ConsultarEstudiantes" type="tns:ConsultarEstudiantes" />
+
+<xs:element name="ConsultarEstudiantesResponse" type="tns:ConsultarEstudiantesResponse" />
+
+<xs:element name="IngresarDocente" type="tns:IngresarDocente" />
+
+<xs:element name="IngresarDocenteResponse" type="tns:IngresarDocenteResponse" />
+
+<xs:element name="IngresarEstudiante" type="tns:IngresarEstudiante" />
+
+<xs:element name="IngresarEstudianteResponse" type="tns:IngresarEstudianteResponse" />
+
+<xs:element name="IngresarInstitucion" type="tns:IngresarInstitucion" />
+
+<xs:element name="IngresarInstitucionResponse" type="tns:IngresarInstitucionResponse" />
+
+<xs:complexType name="IngresarDocente">
+<xs:sequence>
+<xs:element name="codDocente" type="xs:string" minOccurs="0" />
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="director_A" type="xs:string" minOccurs="0" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+<xs:element name="anoLectivo" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarEstudiante">
+<xs:sequence>
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="grado" type="xs:int" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+<xs:element name="paralelo" type="xs:string" minOccurs="0" />
+<xs:element name="FechaMatricula" type="xs:dateTime" minOccurs="0" />
+<xs:element name="anoLectivo" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarInstitucion">
+<xs:sequence>
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+<xs:element name="contrasena" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarInstitucionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarDocentes">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarDocentesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:docentes" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="docentes">
+<xs:sequence>
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+<xs:element name="anoLectivo" type="xs:int" />
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="codDocente" type="xs:string" minOccurs="0" />
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+<xs:element name="directorA" type="xs:string" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarEnInstitucion">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarEnInstitucionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:institucion" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="institucion">
+<xs:sequence>
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+<xs:element name="contrasena" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarDocente">
+<xs:sequence>
+<xs:element name="codDocente" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarDocenteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEstudiante">
+<xs:sequence>
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ConsultarEstudiantes">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="ConsultarEstudiantesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:estudiantes" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="estudiantes">
+<xs:sequence>
+<xs:element name="anoLectivo" type="xs:int" />
+<xs:element name="apellido" type="xs:string" minOccurs="0" />
+<xs:element name="cedula" type="xs:int" />
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+<xs:element name="fechaMatricula" type="xs:dateTime" minOccurs="0" />
+<xs:element name="grado" type="xs:int" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="paralelo" type="xs:string" minOccurs="0" />
+<xs:element name="sexo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarInstitucion">
+<xs:sequence>
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarInstitucionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
