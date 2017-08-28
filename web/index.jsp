@@ -57,7 +57,7 @@
              background-image: url();
 	     background-color: #CCCCCC;
 	     border: 0px solid #009900;
-	     height: 2500px;
+	     height: 1650px;
 	     width: 720px;
 	     margin-left: 300px;
 	     padding-left:5px;
@@ -117,7 +117,7 @@
     <form action="index.jsp" method="post">
             <table border="2" align="center">
                 <tr>
-                    <th>Administrador_a:</th>
+                    <th>Administrador/a:</th>
                     <td><input type="text" name="administrador" size="40" required></td>
                 </tr>
                 <tr>
@@ -152,7 +152,7 @@
     <form action="index.jsp" method="post">
             <table border="3" align="center">
                 <tr>
-                    <th>Administrador_a:</th>
+                    <th>Administrador/a:</th>
                     <td><input type="text" name="administrador" size="40" required></td>
                 </tr>
                 <tr>
@@ -201,7 +201,7 @@
                     <td><input type="text" name="codEstudiante" onkeypress="return numeros(event)" size="15" required></td>
                 </tr>
                 <tr>
-                    <th>Administrador_a:</th>
+                    <th>Administrador/a:</th>
                     <td><input type="text" name="administrador" size="40" required></td>
                 </tr>
                 <tr>
@@ -217,7 +217,7 @@
                     <td><input type="int" name="cedula" onkeypress="return numeros(event)" size="15" required></td>
                 </tr>
                 <tr>
-                    <th>Director_a:</th>
+                    <th>Director/a:</th>
                     <td><input type="text" name="directorA" size="40" required></td>
                 </tr>
                 <tr>
@@ -367,25 +367,10 @@
                 </tr>
             </table>
        </form>
-
-
-<h1>Servicio de Google Maps</h1>
-<center>
-    <p
-    <div class="wpb_gmaps_widget wpb_content_element vc_map_responsive">
-		<div class="wpb_wrapper">
-		<div class="wpb_map_wraper">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.935947487502!2d-5.663189048539456!3d40.93907097920621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f268985c19c3d%3A0xc64d3d7de0775f21!2sSecretariado+Online+%7C+Secretaria+Virtual!5e0!3m2!1ses!2ses!4v1447150199317" width="500" height="400" frameborder="0" style="width:550px;height:465px;border:0px solid #0075c4;margin:0;padding:10px;background: #f2f2f2;border-radius:10px; box-shadow: 8px 8px 8px #888" allowfullscreen=""></iframe>		
-                </div>
-	</div> </div>
-    </p>
-
-</center>
-
-
+    
 <p>
         <center> <font size=5
-            <footer style="color: #E88E29"> Copyright &copy; 2017 - Ingeniería de Software 2.</footer>
+            <footer style="color: #E88E29"> &copy; Copyright 2017 - Ingeniería de Software 2.</footer>
             </font> </center </p>
 
 
