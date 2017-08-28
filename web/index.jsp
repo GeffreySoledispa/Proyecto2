@@ -6,7 +6,7 @@
 
 
 
-<%@page import="java.text.DateFormat"%>
+<%@page import="java.text.DateFormat"%> 
 <%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -17,7 +17,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Gestion Sistema de Matriculación Control y Registro</title>
         
-        <script type="text/javascript">
+        <script type="text/javascript"> 
             function texto(e){
                             key = e.keyCode || e.which;
                             teclado = String.fromCharCode(key).toLowerCase();
