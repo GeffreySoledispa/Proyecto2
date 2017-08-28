@@ -4,12 +4,6 @@
 <xsd:import namespace="http://webservices.services/" schemaLocation="http://localhost:8082/WebApplication1/Services_W_S?xsd=1" />
 </xsd:schema>
 </types>
-<message name="BuscarDocente">
-<part name="parameters" element="tns:BuscarDocente" />
-</message>
-<message name="BuscarDocenteResponse">
-<part name="parameters" element="tns:BuscarDocenteResponse" />
-</message>
 <message name="IngresarDocente">
 <part name="parameters" element="tns:IngresarDocente" />
 </message>
@@ -22,23 +16,11 @@
 <message name="BuscarEstudianteResponse">
 <part name="parameters" element="tns:BuscarEstudianteResponse" />
 </message>
-<message name="ConsultarEstudiantes">
-<part name="parameters" element="tns:ConsultarEstudiantes" />
+<message name="BuscarDocente">
+<part name="parameters" element="tns:BuscarDocente" />
 </message>
-<message name="ConsultarEstudiantesResponse">
-<part name="parameters" element="tns:ConsultarEstudiantesResponse" />
-</message>
-<message name="ConsultarEnInstitucion">
-<part name="parameters" element="tns:ConsultarEnInstitucion" />
-</message>
-<message name="ConsultarEnInstitucionResponse">
-<part name="parameters" element="tns:ConsultarEnInstitucionResponse" />
-</message>
-<message name="IngresarInstitucion">
-<part name="parameters" element="tns:IngresarInstitucion" />
-</message>
-<message name="IngresarInstitucionResponse">
-<part name="parameters" element="tns:IngresarInstitucionResponse" />
+<message name="BuscarDocenteResponse">
+<part name="parameters" element="tns:BuscarDocenteResponse" />
 </message>
 <message name="BuscarInstitucion">
 <part name="parameters" element="tns:BuscarInstitucion" />
@@ -52,17 +34,31 @@
 <message name="ConsultarDocentesResponse">
 <part name="parameters" element="tns:ConsultarDocentesResponse" />
 </message>
+<message name="IngresarInstitucion">
+<part name="parameters" element="tns:IngresarInstitucion" />
+</message>
+<message name="IngresarInstitucionResponse">
+<part name="parameters" element="tns:IngresarInstitucionResponse" />
+</message>
+<message name="ConsultarEnInstitucion">
+<part name="parameters" element="tns:ConsultarEnInstitucion" />
+</message>
+<message name="ConsultarEnInstitucionResponse">
+<part name="parameters" element="tns:ConsultarEnInstitucionResponse" />
+</message>
 <message name="IngresarEstudiante">
 <part name="parameters" element="tns:IngresarEstudiante" />
 </message>
 <message name="IngresarEstudianteResponse">
 <part name="parameters" element="tns:IngresarEstudianteResponse" />
 </message>
+<message name="ConsultarEstudiantes">
+<part name="parameters" element="tns:ConsultarEstudiantes" />
+</message>
+<message name="ConsultarEstudiantesResponse">
+<part name="parameters" element="tns:ConsultarEstudiantesResponse" />
+</message>
 <portType name="Services_W_S">
-<operation name="BuscarDocente">
-<input wsam:Action="http://webservices.services/Services_W_S/BuscarDocenteRequest" message="tns:BuscarDocente" />
-<output wsam:Action="http://webservices.services/Services_W_S/BuscarDocenteResponse" message="tns:BuscarDocenteResponse" />
-</operation>
 <operation name="IngresarDocente">
 <input wsam:Action="http://webservices.services/Services_W_S/IngresarDocenteRequest" message="tns:IngresarDocente" />
 <output wsam:Action="http://webservices.services/Services_W_S/IngresarDocenteResponse" message="tns:IngresarDocenteResponse" />
@@ -71,17 +67,9 @@
 <input wsam:Action="http://webservices.services/Services_W_S/BuscarEstudianteRequest" message="tns:BuscarEstudiante" />
 <output wsam:Action="http://webservices.services/Services_W_S/BuscarEstudianteResponse" message="tns:BuscarEstudianteResponse" />
 </operation>
-<operation name="ConsultarEstudiantes">
-<input wsam:Action="http://webservices.services/Services_W_S/ConsultarEstudiantesRequest" message="tns:ConsultarEstudiantes" />
-<output wsam:Action="http://webservices.services/Services_W_S/ConsultarEstudiantesResponse" message="tns:ConsultarEstudiantesResponse" />
-</operation>
-<operation name="ConsultarEnInstitucion">
-<input wsam:Action="http://webservices.services/Services_W_S/ConsultarEnInstitucionRequest" message="tns:ConsultarEnInstitucion" />
-<output wsam:Action="http://webservices.services/Services_W_S/ConsultarEnInstitucionResponse" message="tns:ConsultarEnInstitucionResponse" />
-</operation>
-<operation name="IngresarInstitucion">
-<input wsam:Action="http://webservices.services/Services_W_S/IngresarInstitucionRequest" message="tns:IngresarInstitucion" />
-<output wsam:Action="http://webservices.services/Services_W_S/IngresarInstitucionResponse" message="tns:IngresarInstitucionResponse" />
+<operation name="BuscarDocente">
+<input wsam:Action="http://webservices.services/Services_W_S/BuscarDocenteRequest" message="tns:BuscarDocente" />
+<output wsam:Action="http://webservices.services/Services_W_S/BuscarDocenteResponse" message="tns:BuscarDocenteResponse" />
 </operation>
 <operation name="BuscarInstitucion">
 <input wsam:Action="http://webservices.services/Services_W_S/BuscarInstitucionRequest" message="tns:BuscarInstitucion" />
@@ -91,22 +79,25 @@
 <input wsam:Action="http://webservices.services/Services_W_S/ConsultarDocentesRequest" message="tns:ConsultarDocentes" />
 <output wsam:Action="http://webservices.services/Services_W_S/ConsultarDocentesResponse" message="tns:ConsultarDocentesResponse" />
 </operation>
+<operation name="IngresarInstitucion">
+<input wsam:Action="http://webservices.services/Services_W_S/IngresarInstitucionRequest" message="tns:IngresarInstitucion" />
+<output wsam:Action="http://webservices.services/Services_W_S/IngresarInstitucionResponse" message="tns:IngresarInstitucionResponse" />
+</operation>
+<operation name="ConsultarEnInstitucion">
+<input wsam:Action="http://webservices.services/Services_W_S/ConsultarEnInstitucionRequest" message="tns:ConsultarEnInstitucion" />
+<output wsam:Action="http://webservices.services/Services_W_S/ConsultarEnInstitucionResponse" message="tns:ConsultarEnInstitucionResponse" />
+</operation>
 <operation name="IngresarEstudiante">
 <input wsam:Action="http://webservices.services/Services_W_S/IngresarEstudianteRequest" message="tns:IngresarEstudiante" />
 <output wsam:Action="http://webservices.services/Services_W_S/IngresarEstudianteResponse" message="tns:IngresarEstudianteResponse" />
 </operation>
+<operation name="ConsultarEstudiantes">
+<input wsam:Action="http://webservices.services/Services_W_S/ConsultarEstudiantesRequest" message="tns:ConsultarEstudiantes" />
+<output wsam:Action="http://webservices.services/Services_W_S/ConsultarEstudiantesResponse" message="tns:ConsultarEstudiantesResponse" />
+</operation>
 </portType>
 <binding name="Services_W_SPortBinding" type="tns:Services_W_S">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
-<operation name="BuscarDocente">
-<soap:operation soapAction="" />
-<input>
-<soap:body use="literal" />
-</input>
-<output>
-<soap:body use="literal" />
-</output>
-</operation>
 <operation name="IngresarDocente">
 <soap:operation soapAction="" />
 <input>
@@ -125,25 +116,7 @@
 <soap:body use="literal" />
 </output>
 </operation>
-<operation name="ConsultarEstudiantes">
-<soap:operation soapAction="" />
-<input>
-<soap:body use="literal" />
-</input>
-<output>
-<soap:body use="literal" />
-</output>
-</operation>
-<operation name="ConsultarEnInstitucion">
-<soap:operation soapAction="" />
-<input>
-<soap:body use="literal" />
-</input>
-<output>
-<soap:body use="literal" />
-</output>
-</operation>
-<operation name="IngresarInstitucion">
+<operation name="BuscarDocente">
 <soap:operation soapAction="" />
 <input>
 <soap:body use="literal" />
@@ -170,7 +143,34 @@
 <soap:body use="literal" />
 </output>
 </operation>
+<operation name="IngresarInstitucion">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+<operation name="ConsultarEnInstitucion">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
 <operation name="IngresarEstudiante">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+<operation name="ConsultarEstudiantes">
 <soap:operation soapAction="" />
 <input>
 <soap:body use="literal" />

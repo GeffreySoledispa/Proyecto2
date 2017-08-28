@@ -65,25 +65,12 @@
 <xs:element name="grado" type="xs:int" />
 <xs:element name="sexo" type="xs:string" minOccurs="0" />
 <xs:element name="paralelo" type="xs:string" minOccurs="0" />
-<xs:element name="FechaMatricula" type="xs:dateTime" minOccurs="0" />
+<xs:element name="FechaMatricula" type="xs:string" minOccurs="0" />
 <xs:element name="anoLectivo" type="xs:int" />
 </xs:sequence>
 </xs:complexType>
 
 <xs:complexType name="IngresarEstudianteResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="IngresarInstitucion">
-<xs:sequence>
-<xs:element name="administrador" type="xs:string" minOccurs="0" />
-<xs:element name="contrasena" type="xs:int" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="IngresarInstitucionResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0" />
 </xs:sequence>
@@ -113,6 +100,19 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="IngresarInstitucion">
+<xs:sequence>
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
+<xs:element name="contrasena" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IngresarInstitucionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="ConsultarEnInstitucion">
 <xs:sequence />
 </xs:complexType>
@@ -130,6 +130,18 @@
 </xs:sequence>
 </xs:complexType>
 
+<xs:complexType name="BuscarEstudiante">
+<xs:sequence>
+<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="BuscarEstudianteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
 <xs:complexType name="BuscarDocente">
 <xs:sequence>
 <xs:element name="codDocente" type="xs:string" minOccurs="0" />
@@ -142,13 +154,13 @@
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="BuscarEstudiante">
+<xs:complexType name="BuscarInstitucion">
 <xs:sequence>
-<xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
+<xs:element name="administrador" type="xs:string" minOccurs="0" />
 </xs:sequence>
 </xs:complexType>
 
-<xs:complexType name="BuscarEstudianteResponse">
+<xs:complexType name="BuscarInstitucionResponse">
 <xs:sequence>
 <xs:element name="return" type="xs:string" minOccurs="0" />
 </xs:sequence>
@@ -170,23 +182,11 @@
 <xs:element name="apellido" type="xs:string" minOccurs="0" />
 <xs:element name="cedula" type="xs:int" />
 <xs:element name="codEstudiante" type="xs:string" minOccurs="0" />
-<xs:element name="fechaMatricula" type="xs:dateTime" minOccurs="0" />
+<xs:element name="fechaMatricula" type="xs:string" minOccurs="0" />
 <xs:element name="grado" type="xs:int" />
 <xs:element name="nombre" type="xs:string" minOccurs="0" />
 <xs:element name="paralelo" type="xs:string" minOccurs="0" />
 <xs:element name="sexo" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="BuscarInstitucion">
-<xs:sequence>
-<xs:element name="administrador" type="xs:string" minOccurs="0" />
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="BuscarInstitucionResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
 </xs:sequence>
 </xs:complexType>
 </xs:schema>
