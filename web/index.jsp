@@ -6,6 +6,8 @@
 
 
 
+<%@page import="java.util.List"%>
+<%@page import="services.webservices.Institucion"%>
 <%@page import="java.text.DateFormat"%> 
 <%@page import="java.util.GregorianCalendar"%>
 <%@page import="java.text.SimpleDateFormat"%>
@@ -89,7 +91,7 @@
             <font size="6">
             <b>
                 <center>
-                    <header style="color: #188EE5">Sistema de Matriculacion Control y Registro</header>
+                    <header style="color: #188EE5">Sistema de Matriculacion Control y Registro de Estudiantes y Docentes</header>
                 </center>
             
             </b>
